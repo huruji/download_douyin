@@ -36,6 +36,6 @@ def download(url, id):
 
 while True:
 	url = input('链接:')
-	url = 'https://v.douyin.com/Gce3Sx/'
 	videoid, addr = parse_douyin_share(url)
-	download(addr, videoid)
+	filename = download(addr, videoid)
+	print('下载成功，地址为: ' + filename)
